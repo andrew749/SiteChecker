@@ -8,7 +8,7 @@ def checkWebsite(html1,html2):
 		return True
 	else:
 		return False
-oldhtml=urlopen("http://store.apple.com/ca/browse/home/specialdeals/mac/mac_mini").read()
+oldhtml=urlopen("http://store.apple.com/ca/browse/home/specialdeals/mac/macbook_pro/13").read()
 oldhtml=BeautifulSoup(oldhtml).find("div",{"id":"primary"})
 def sendemail():
 	server=smtplib.SMTP("smtp.gmail.com:587")
